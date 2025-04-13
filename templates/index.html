@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Index Page{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Flask App!</h1>
+    <p>This is a simple web application.</p>
+    <p>{{ text }}</p>  
+    
+    <ul>
+        {% for item in array %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

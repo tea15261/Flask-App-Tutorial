@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Others{% endblock %}
+
+
+
+{% block content %}
+    <h1>Filters</h1>
+    <p>{{ sometext }}</p>
+    <p>{{ sometext|lower }}</p>
+    <p>{{ sometext|replace('i', 'X') }}</p>
+    <p>{{ sometext|title }}</p>
+    <p>{{ sometext|capitalize }}</p>
+    <p>{{ sometext|length }}</p>
+    <p>{{ sometext|reverse }}</p>
+    <p>{{ sometext|repeat(5) }}</p>
+{% endblock %}
